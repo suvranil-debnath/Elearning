@@ -1,0 +1,135 @@
+/* Container styling */
+.account-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 87vh;
+}
+
+/* Larger Profile Card */
+.profile-card-large {
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  padding: 30px;
+  height: 480px;
+  width: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Profile Header */
+.profile-header {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px dotted #686868;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 5px;
+}
+
+.edit-btn {
+  position: absolute;
+  font-size: 20px;
+  top: -27px;
+  right: -79px;
+  background: #8f8f8f;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  border-radius: 50%;
+  width: 45px;
+}
+
+.edit-btn:hover {
+  background: #ddd;
+}
+
+/* Profile Details */
+.profile-details h3 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.email {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Profile Actions */
+.profile-actions {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.com-btn {
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 28px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #6c5ce7;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
+  width: fit-content;
+}
+
+.com-btn:hover {
+  background-color: #574bce;
+  transform: translateY(-3px);
+}
+
+.admin-btn {
+  background-color: #5f27cd;
+}
+
+.tutor-btn {
+  background-color: #1e90ff;
+}
+
+.logout-btn {
+  background-color: #d63031;
+}
+
+.logout-btn:hover {
+  background-color: #e74c3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-card-large {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .com-btn {
+    font-size: 0.9rem;
+  }
+}
